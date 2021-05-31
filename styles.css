@@ -1,0 +1,237 @@
+* {
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header"
+    "empresa postventa"
+    "botom botom"
+    "footer footer";
+}
+
+header {
+    width: 100%;
+    background-color: rgb(29, 202, 29);
+    height: 150px;
+    grid-area: header;
+}
+
+header nav {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    background-color: rgb(29, 202, 29);;
+    margin-top: -110px;
+}
+
+.iconoempresa{
+    height:98%;
+    border: black solid 1px;
+}
+
+.menu_bar {
+    display:none;
+    float: right;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li {
+    float: right;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(25, 139, 25); 
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/*.info {
+    border: black solid 2px;
+    display: flex;
+    background-color: grey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}*/
+
+.empresa {
+    background-color: grey;
+    width: 96%;
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid;
+    text-align: center;
+    grid-area:empresa;
+}
+
+.postventa {
+    background-color: grey;
+    width: 96%;
+    margin: 5px;
+    padding: 5px;
+    border: black 2px solid;
+    text-align: center;
+    grid-area:postventa;
+}
+
+.botom{
+    grid-area:botom;
+}
+
+.footer{
+    grid-area:footer;
+}
+
+.pie {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    height: 100px;
+}
+.pie img {
+    height: 220px;
+    width: 220px;
+}
+
+.foto{
+    border: solid 2px rgb(14, 121, 14);
+    height: 500px;
+    width: 600px;
+    box-shadow: 10px 10px 5px gray;
+}
+
+h3{
+    text-align: center;
+}
+
+.imagenes{
+    display: flex;
+}
+
+.datos{
+    display: flex;
+}
+
+.masdatos{
+    margin-left: 40px;
+}
+
+.imagenmaquina{
+    height: 300px;
+    width: 400px;
+    margin: 5px;
+}
+
+.titulomaquinas {
+    text-align: center;
+}
+
+.tablavalores {
+    display: block;
+}
+
+.table, td, tr {
+    border: solid black 1px;
+    width: 10%;
+    text-align: center;
+}
+
+.trtitulos {
+    background-color:rgb(29, 202, 29) ;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .container{
+        grid-template-areas: 
+        "header header"
+        "empresa empresa"
+        "postventa postventa"
+        "botom botom"
+        "footer footer";
+    }
+    header nav {
+        width: 80%;
+        height: 100%;
+        visibility:hidden;
+        margin: 0;
+        position: fixed;
+    }
+
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom:1px solid white;
+    }
+
+    /*.menu_bar {
+        display: block;
+        width: 100%;
+        background: gray;
+        visibility:hidden;
+    }*/
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background-color:rgb(29, 202, 29);;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span {
+        float: right;
+    }
+
+    .pie {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        color: white;
+        float: left;
+        height: 200px;
+    }
+    .pie img {
+        height: 220px;
+        width: 200px;
+    }
+
+    .botom{
+        grid-area:botom;
+        margin-left:15% ;
+    }
+}
