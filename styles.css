@@ -8,17 +8,31 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
-    "header header"
-    "empresa postventa"
-    "botom botom"
-    "footer footer";
+    "grid-item1 grid-item1"
+    "grid-item2 grid-item3"
+    "grid-item4 grid-item4"
+    "grid-item5 grid-item5";
 }
-
+.grid-item1{
+    grid-area: grid-item1;
+}
+.grid-item2{
+    grid-area: grid-item2;
+}
+.grid-item3{
+    grid-area: grid-item3;
+}
+.grid-item4{
+    grid-area: grid-item4;
+}
+.grid-item5{
+    grid-area: grid-item5;
+}
 header {
     width: 100%;
     background-color: rgb(29, 202, 29);
     height: 150px;
-    grid-area: header;
+    grid-area: grid-item1;
 }
 
 header nav {
@@ -84,7 +98,7 @@ p {
     padding: 5px;
     border: black 2px solid;
     text-align: center;
-    grid-area:empresa;
+    grid-area:grid-item2;
 }
 
 .postventa {
@@ -94,15 +108,13 @@ p {
     padding: 5px;
     border: black 2px solid;
     text-align: center;
-    grid-area:postventa;
+    grid-area:grid-item3;
 }
 
-.botom{
-    grid-area:botom;
-}
-
-.footer{
-    grid-area:footer;
+.desplegable{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
 }
 
 .pie {
@@ -119,10 +131,10 @@ p {
 }
 
 .foto{
-    border: solid 2px rgb(14, 121, 14);
-    height: 500px;
-    width: 600px;
+    height: 250px;
+    width: 300px;
     box-shadow: 10px 10px 5px gray;
+    margin: 10px;
 }
 
 h3{
@@ -131,6 +143,7 @@ h3{
 
 .imagenes{
     display: flex;
+    list-style: none;
 }
 
 .datos{
@@ -138,17 +151,24 @@ h3{
 }
 
 .masdatos{
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .imagenmaquina{
-    height: 300px;
-    width: 400px;
+    height: 310px;
+    width: 350px;
     margin: 5px;
+    box-shadow: 10px 10px 5px gray;
 }
 
 .titulomaquinas {
     text-align: center;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border: 1px solid black;
+    height: 100%;
 }
 
 .tablavalores {
@@ -165,6 +185,61 @@ h3{
     background-color:rgb(29, 202, 29) ;
 }
 
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 30px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px;
+    border: black solid 1px; 
+  }
+
+  button{
+    height: 50px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 10px;    
+    background-color:rgb(29, 202, 29); 
+    border-color: rgb(29, 202, 29); 
+    border-style: solid; 
+    width: 420px;   
+    cursor: pointer;
+  }
+    
+  button p{
+    text-align:center;
+    color: #fff; 
+  }
+
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: rgb(29, 202, 29); 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 2px; 
+    border-color: rgb(29, 202, 29); 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
 
 
 
@@ -175,11 +250,11 @@ h3{
 @media screen and (max-width: 700px) {
     .container{
         grid-template-areas: 
-        "header header"
-        "empresa empresa"
-        "postventa postventa"
-        "botom botom"
-        "footer footer";
+        "grid-item1 grid-item1"
+        "grid-item2 grid-item2"
+        "grid-item3 grid-item3"
+        "grid-item4 grid-item4"
+        "grid-item5 grid-item5";
     }
     header nav {
         width: 80%;
@@ -231,7 +306,19 @@ h3{
     }
 
     .botom{
-        grid-area:botom;
         margin-left:15% ;
+    }
+    .desplegable{
+        display: block;
+        list-style-type: none;
+        justify-content: center;
+    }
+    .foto{
+        margin-left:100px ;
+    }
+    .imagenes{
+        list-style: none;
+        display: block;
+        margin-left: 30px;
     }
 }
