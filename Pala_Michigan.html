@@ -47,69 +47,55 @@
         
 
         <div class="grid-item4">
+            <form id="formdata">
+                <div>
+                    <label for="modelo">modelo</label>
+                    <input type="text" id="modelo" name="modelo">
+                </div>
+                <div>
+                    <label for="codigo">codigo</label>
+                    <input type="text" id="codigo" name="codigo">
+                </div>
+                <div>        
+                    <label for="peso">peso</label>
+                    <input type="text" id="peso" name="peso"></div>
+                <div>
+                    <label for="motor-marca">motor-marca</label>
+                    <input type="text" id="motor-marca" name="motor-marca">
+                </div>
+                <div>
+                    <label for="motor-potencia">motor-potencia</label>
+                    <input type="text" id="motor-potencia" name="motor-potencia">
+                </div>
+            
+                
+                <div>
+                    <button id="btn-añadir">Añadir</button>
+                </div>
+                <div>
+                    <button id="btn-añadir3">Añadir 3</button>
+                </div>
+                <div>
+                    <button id="borrar">Borrar</button>
+                </div>
+            
+            </form>
+
+        <div class="tableformat">
         </tbody></table>
-        <table cellspacing="0" class="tablavalores">
-         <tbody><tr class="trtitulos">
-             <td>Caracteristicas</td>
-             <td>R45C-II</td>
-             <td>R55C-II</td>
-             <td>R65C-II</td>
-         </tr>
-         <tr>
-             <td>Codigo</td>
-             <td>10582005N</td>
-             <td>10582016N</td>
-             <td>10582018N</td>
-         </tr>
-         <tr>
-             <td>Peso</td>
-             <td>4.800 Kg</td>
-             <td>5.300 Kg</td>
-             <td>8.300 Kg</td>
-         </tr>
-         <tr>
-             <td>Dispositivo de trabajo</td>
-             <td>Joystick Mecanico</td>
-             <td>Joystick</td>
-             <td>Joystick mecánico</td>
-         </tr>
-         <tr>
-             <td>Capacidad de carga</td>
-             <td>1.500 Kg</td>
-             <td>2.000 Kg</td>
-             <td>2.500 Kg</td>
-         </tr>
-         <tr>
-             <td>Altura maxima de carga</td>
-             <td>4.480 mm</td>
-             <td>4.320 mm</td>
-             <td>4.700 mm</td>
-         </tr>
-         <tr>
-              <td>Sistema de frenos</td>
-              <td>Caliper-Disco</td>
-              <td>Caliper-Disco</td>
-              <td>Caliper - Disco</td>
-          </tr>
-          <tr>
-              <td>Distancia entre ejes</td>
-              <td>2.250 mm</td>
-              <td>2.370 mm</td>
-              <td>2.730 mm</td>
-          </tr>
-          <tr>
-              <td>Motor-Marca</td>
-              <td>Hanomag</td>
-              <td>Cummins</td>
-              <td>Weichai</td>
-          </tr>
-          <tr>
-              <td>Motor-Potencia</td>
-              <td>40 Kw / 50 hp</td>
-              <td>75 Kw / 100 Hp</td>
-              <td>92 Kw</td>
-          </tr>
-    </tbody></table>
+        <table cellspacing="0" class="tablavalores" id="productos">
+         <tbody id="cuerpotabla">
+             <tr class="trtitulos">
+                <td>Modelo</td>
+                <td>Codigo</td>
+                <td>Capacidad de carga</td>
+                <td>Motor-Marca</td>
+                 <td>Motor-Potencia</td>
+            </tr>
+        
+         </tbody>
+        </table>
+        </div>
     </div>
      
     <div class="grid-item5">    
