@@ -10,99 +10,102 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="contenedor">
-        <div class="grid-item1">
-        <header>
-            <div class="container">
-                <img src="Imagenes\Servicampo3.jpg" alt="servicio" class="iconoempresa">
-            </div>
-            <nav id="site-nav" class="site-nav">
-                <ul>
-                    <li><a href="inicio.html" target="_blank">Inicio</a></li>
-                    <li><a href="catalogo.html" target="_blank"></i>Catalogo</a></li>
-                    <li><a href="contacto.html" target="_blank"></i>Contacto</a></li>
-                </ul>
-            </nav>
-            <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
-                <div class="hamburger"></div>
-            </div>
-        </header>
+  <div class="contenedor">
+    <div class="grid-item1">
+      <header>
+        <div class="container">
+            <img src="Imagenes\Imagenes\Servicampo3.jpg" alt="servicio" class="iconoempresa">
         </div>
-
-
-        <div class="grid-item2">
-            <div class="titulomaquinas">
-                <h2>Palas Michigan<br>R45C-II/ R55C/ R65c</h2>
-                    <p>Potentes y Confiables le ofrecen al operador el mayor rendimiento a la hora del trabajo diario.</p>
-            </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="inicio.html" target="_blank">Inicio</a></li>
+                <li><a href="catalogo.html" target="_blank"></i>Catalogo</a></li>
+                <li><a href="contacto.html" target="_blank"></i>Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
         </div>
-        
-            <div class="grid-item3">
-                    <ul class="imagenes">
-                        <li><img class="imagenmaquina" src="Maquinas\Palas\cargador-R45C-II-1-1030x596.jpg"><p class="masdatos"> Pala Frontal R45CII - Capacidad de Carga: 1800 Kg</p></li>
-                        <li><img class="imagenmaquina" src="Maquinas\Palas\cargador-R55.webp"><p class="masdatos"> Pala Frontal R55C - Capacidad de Carga: 2000 Kg</p></li>
-                        <li><img class="imagenmaquina" src="Maquinas\Palas\cargador-R65.webp"><p class="masdatos"> Pala Frontal R65C - Capacidad de Carga: 2500 Kg</p></li>
-                    </ul>
-            </div>
-        
+      </header>
+    </div>
 
-        <div class="grid-item4">
-            <form id="formdata">
-                <div>
-                    <label for="modelo">modelo</label>
-                    <input type="text" id="modelo" name="modelo">
-                </div>
-                <div>
-                    <label for="codigo">codigo</label>
-                    <input type="text" id="codigo" name="codigo">
-                </div>
-                <div>        
-                    <label for="peso">peso</label>
-                    <input type="text" id="peso" name="peso"></div>
-                <div>
-                    <label for="motor-marca">motor-marca</label>
-                    <input type="text" id="motor-marca" name="motor-marca">
-                </div>
-                <div>
-                    <label for="motor-potencia">motor-potencia</label>
-                    <input type="text" id="motor-potencia" name="motor-potencia">
-                </div>
-            
-                
-                <div>
-                    <button id="btn-añadir">Añadir</button>
-                </div>
-                <div>
-                    <button id="btn-añadir3">Añadir 3</button>
-                </div>
-                <div>
-                    <button id="borrar">Borrar</button>
-                </div>
-            
-            </form>
 
-        <div class="tableformat">
-        </tbody></table>
-        <table cellspacing="0" class="tablavalores" id="productos">
-         <tbody id="cuerpotabla">
-             <tr class="trtitulos">
-                <td>Modelo</td>
-                <td>Codigo</td>
-                <td>Capacidad de carga</td>
-                <td>Motor-Marca</td>
-                 <td>Motor-Potencia</td>
-            </tr>
-        
-         </tbody>
-        </table>
+    <div class="grid-item2">
+        <div class="titulomaquinas">
+            <h2>Palas Michigan<br>R45C-II/ R55C/ R65c</h2>
+                <p>Potentes y Confiables le ofrecen al operador el mayor rendimiento a la hora del trabajo diario.</p>
         </div>
     </div>
-     
+    
+        <div class="grid-item3">
+                <ul class="imagenes">
+                    <li><img class="imagenmaquina" src="Maquinas\Palas\cargador-R45C-II-1-1030x596.jpg"><p class="masdatos"> Pala Frontal R45CII - Capacidad de Carga: 1800 Kg</p></li>
+                    <li><img class="imagenmaquina" src="Maquinas\Palas\cargador-R55.webp"><p class="masdatos"> Pala Frontal R55C - Capacidad de Carga: 2000 Kg</p></li>
+                    <li><img class="imagenmaquina" src="Maquinas\Palas\cargador-R65.webp"><p class="masdatos"> Pala Frontal R65C - Capacidad de Carga: 2500 Kg</p></li>
+                </ul>
+        </div>
+
+        <div class="grid-item4">
+          <form id="formdata">
+            <p>Modelo</p>
+                <input type="text" id="txtmodelo">
+            <p>Codigo</p> 
+                <input type="text" id="txtcodigo">
+            <p>Capacidad de Carga</p>
+                <input type="text" id="txtCapacidad">
+            <p>Motor Marca</p>
+                <input type="text" id="txtmotor-marca">
+            <p>Motor Potencia</p>
+                <input type="text" id="txtmotor-potencia">
+            <p>id a Editar</p>
+                <input type="text" id="txtid">
+          </form> 
+                <div class="botones">
+                    <button id="btn-anadir">Añadir</button>
+                    <button id="btn-eliminar">Eliminar</button>
+                    <button id="btn-editar">Editar</button>
+                    <button id="btn-crear">Crear 3</button>
+
+                    <select name="filtro" id ="filtro" >
+                      <option value="vacio"></option>
+                      <option value="cummins">cummins</option>
+                      <option value="hanomag">hanomah</option>
+                      <option value="weichag">weichang</option>
+                    </select>
+                    <input type="submit" id ="btn-okey" value="Filtrar">
+                </div>
+
+                <p id="mensaje"></p>
+              <table id=tabla>
+                <thead>
+                  <tr class="trtitulos">
+                    <td scope="col">Modelo</td>
+                    <td scope="col">Codigo</td>
+                    <td scope="col">Capacidad de Carga</td>
+                    <td scope="col">Motor Marca</td>
+                    <td scope="col">Motor Potencia</td>
+                    <td scope="col">id</td>
+                  </tr>
+                </thead>
+                  <tbody  id="contenido">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+              </table>
+         </div>
+
+    
     <div class="grid-item5">    
-    <div class="footer">
+      <div class="footer">
         <footer class="pie">
-            <img src="Imagenes\Servicampo1.png" alt="Logo Empresa">
-            <p>
+            <img src="Imagenes\Imagenes\Servicampo1.png" alt="Logo Empresa">
+              <p>
                 Colectora Macaya n°591, Tandil. Buenos Aires. Argentina.
                 <br>
 
@@ -110,11 +113,12 @@
                 <br>
 
                 servicampotandilsa@gmail.com
-                </p>
+              </p>
         </footer>
      </div>
     </div>
-    </div>
-    <script src="js/app.js"></script>
+  </div>
+
+    <script src="js\tata.js"></script>
 </body>
 </html>

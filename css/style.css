@@ -48,7 +48,9 @@ header::after{
     display: block;
 }
 .iconoempresa{
-    height: 130px;
+    height: 130%;
+    border-radius: 15px;
+    border: solid black 2px;
 }
 .site-nav{
     top:100%;
@@ -250,6 +252,18 @@ h3{
     text-align: center;
 }
 
+#formdata{
+    display:  grid;
+    text-align: justify;
+    justify-items: center;
+}
+
+
+.botones{
+    display: grid;
+    justify-content:center;
+}
+
 .trtitulos {
     background-color: #557e7c;
 }
@@ -262,6 +276,7 @@ h3{
     width: 350px;
     margin: 10px;
     box-shadow: 10px 10px 5px gray;
+    border: black solid 2px;
 }
 .titulomaquinas {
     text-align: center;
